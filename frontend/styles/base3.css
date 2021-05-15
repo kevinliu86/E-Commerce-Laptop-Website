@@ -1,0 +1,56 @@
+/* 
+*   base3.css focuses on display all orders
+*   this is used in the account.html, orders.html page 
+*   where we need to display either orders for a specific customer
+*   or all orders for the admin
+*/
+
+.orders {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.orders h1 {
+    padding-bottom: 24px;
+}
+
+.orders table {
+    table-layout: fixed;
+}
+
+
+/*  The account.html page has some small modification
+*   to the table css in the base.css file. 
+*   This is due to that we fit a small table into the big table
+*/
+
+
+.small-table {
+    width: max-content;
+    margin-left: 32px;
+}
+
+.small-table th,
+.small-table td {
+    border-top: none;
+    border-bottom: none;
+}
+
+th, td {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+td.no-border {
+    border-bottom: none;
+}
+
+.underline:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

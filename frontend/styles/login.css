@@ -1,0 +1,51 @@
+#main-window{
+  font-family:'Arial Light', sans-serif;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1%;
+}
+
+input{
+  font-size: 1.5em;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1%;
+}
+
+h1{
+  margin:1%;
+  font-weight: normal;
+}
+
+p{
+  margin: 0;
+}
+
+.loginInputBox{
+  width: 50%;
+  margin-top: 1%;
+}
+
+#submit-button{
+  width: 50%;
+  text-align: right;
+  margin-top: 3%;
+}
+
+#link-to-register{
+  width: 50%;
+  text-align: left;
+
+}
+
+button:hover{
+  opacity: 70%;
+}
+
+a:hover{
+  opacity: 70%;
+}

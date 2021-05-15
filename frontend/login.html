@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="description" content="login-page">
+        <meta name="author" content="Yanchao Liu">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="styles/base.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/login.css" />
+
+        <link rel="stylesheet" type="text/css" href="styles/navbar.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/modal.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/font.css"/>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        
+        <title>Laptop Mall: Log In Page</title>
+    </head>
+    <body>
+        <nav class="navbar"></nav>
+
+        <main>
+            <div id="main-window">            
+                <h1>Sign in</h1>
+                <div class="loginInputBox">
+                    <p>Email address:</p> 
+                    <input type="text" id="email-signin" placeholder="Email">
+                </div>
+                
+                <div class="loginInputBox">
+                    <p>Password:</p> 
+                    <input type="password" id="password-signin" placeholder="Password"><br>
+                </div>
+                
+                <div id="submit-button">
+                    <button type="button" id="submit-signin">Sign in</button>
+                </div>
+                
+                <div id="link-to-register">
+                    <a href="register.html">Create Account</a>
+                </div>
+            </div>
+        </main>
+
+        <script type="module" src="src/login.js"></script>
+
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger
+            intent="WELCOME"
+            chat-title="WWCD5"
+            agent-id="ca8454fe-7ca8-4857-89f4-b8fc85263c5d"
+            language-code="en"
+        ></df-messenger>
+    </body>
+</html>

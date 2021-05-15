@@ -1,0 +1,128 @@
+h1 {
+    font-size: 32px;
+    padding-bottom: 16px;
+}
+
+.checkout,
+.cart {
+    width: 95%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.name:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.adjust {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.adjust .material-icons {
+    font-size: 22px;
+    color:#6e6969f0;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;  
+}
+
+.adjust .material-icons:hover {
+    cursor: pointer;
+}
+
+.adjust .quantity {
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.adjust .remove {
+    margin-left: 16px;
+}
+
+tr.last-row td {
+    height: 80px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.cart .btns-below-cart {
+    padding-top: 32px;
+    text-align: right;
+}
+
+.checkout .addresses,
+.checkout .pay {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.address {
+    padding-left: 8px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
+.address:hover {
+    cursor: pointer;
+    background-color: #eee;
+}
+
+
+.address label {
+    font-size: 24px;
+    font-weight: normal;
+    margin-left: 12px;
+}
+
+.address input {
+    transform: scale(1.5);
+}
+
+.address input:hover {
+    cursor: pointer;
+}
+
+.pay form {
+    padding-left: 8px;
+}
+
+.row {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.row label {
+    font-size: 24px;
+    width: 210px;
+}
+
+.last_label{
+    width: fit-content !important;
+}
+
+form button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+

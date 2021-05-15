@@ -1,0 +1,218 @@
+main {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.item {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.item.snapshot {
+    background-image: url("../img/snapshot.png");
+}
+
+.item.preview {
+    background-image: url("../img/preview.png");
+}
+
+.item.new {
+    background-image: url("../img/new.png");
+}
+
+.item.snapshot,
+.item.preview,
+.item.new {
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+}
+
+.simple {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+
+.simple .photos{
+    width: 50%;
+    height: fit-content;
+}
+
+.simple .photos img{
+    width: 100%;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 0px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.simple .photos .arrows {
+    position: absolute;
+    margin-top: -200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 38%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.simple .photos .arrows .arrow-left,
+.simple .photos .arrows .arrow-right {
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.simple .photos .arrows .arrow-left:hover,
+.simple .photos .arrows .arrow-right:hover {
+    cursor: pointer;
+}
+
+.simple .simple-profile{
+    width: 40%;
+    padding-left: 25px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.simple .simple-profile .name{
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.simple .simple-profile .price {
+    font-size: 33px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.simple .simple-profile ul {
+    padding-left: 20px;
+}
+
+.simple .simple-profile ul li{
+    font-size: 28px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.simple .simple-profile button {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+}
+
+.simple .simple-profile .add-to-cart {
+    background-color: #f3ce73;
+}
+
+.simple .simple-profile .add-to-cart.in-cart {
+    background-color: #d3806c;
+}
+
+.detail {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.detail .header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.detail .header .title {
+    font-size: 35px;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.specs {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.specs .spec {
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.spec .spec-title {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 12px;
+}
+
+.spec .photos,
+.spec table{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spec .photos .photo {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.spec .photos .photo img {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+}
+
+.spec .photos .photo input {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.edit {
+    width: 100%;
+    padding-bottom: 24px;
+}
+
+.edit h1 {
+    padding-bottom: 24px;
+}
+
+.modified {
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+.edit-btns {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: right;
+}
+
+
+
+

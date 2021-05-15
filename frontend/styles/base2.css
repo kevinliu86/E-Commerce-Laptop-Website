@@ -1,0 +1,213 @@
+/*  base 2.css is only for display multiple products onto the screen
+*   It is used on the homepage, products page and item page only.
+*   It also includes the recommenders settings.
+*/
+
+.products {
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: space-between;
+}
+
+.products .no-product {
+    padding-top: 25px;
+    font-size: 28px;
+    text-align: left;
+}
+
+.products .product {
+    width: 350px;
+    height: 380px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    perspective: 1000px;
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+.product.hide {
+    display: none;
+}
+
+.product .inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+    padding-top: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.product:hover .inner{
+    transform: rotateY(180deg);
+}
+
+.inner .front,
+.inner .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.inner .front {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+}
+
+.inner .front .name {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.inner .front .stickers {
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+
+.inner .front .stickers .sticker {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    font-size: 19px;
+    font-size: bold;
+}
+
+.inner .front .stickers .sticker:nth-child(1){
+    background-color: #7fffd4;
+}
+
+.inner .front .stickers .sticker:nth-child(2){
+    background-color: #ffa50066;
+}
+
+.inner .front .stickers .sticker:nth-child(3){
+    background-color: #0000ff33
+}
+
+.inner .front .stickers .sticker:nth-child(4){
+    background-color: #ffc0cb;
+}
+
+.inner .front img {
+    width: 280px;
+    height: 200px;
+    object-fit: contain;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+.inner .front .price{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.inner .back {
+    font-size: 20px;
+    transform: rotateY(180deg);
+    border-collapse: collapse;
+}
+
+.back tr:nth-child(even) {
+    background-color: rgb(214, 213, 213);
+}
+
+.product:hover{
+    cursor: pointer;
+}
+
+
+.dots {
+    padding-top: 24px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+.dots .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin-left: 8px;
+    margin-right: 8px;
+    background-color: #717171;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.dots .dot.inactive {
+    background-color: #bbb;
+}
+
+.recommender {
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recommender .viewhistory,
+.recommender .byitem,
+.recommender .byviewhistory,
+.recommender .topselling,
+.recommender .topview {
+    padding-top: 16px;
+    padding-bottom:32px;
+    width: 100%;
+}
+
+.recommender .viewhistory:empty,
+.recommender .byitem:empty,
+.recommender .byviewhistory:empty,
+.recommender .topselling:empty,
+.recommender .topview:empty {
+    padding: 0px;
+}
+
+.recommender .title {
+    display: flex;
+    flex-flow: row nowarp;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.recommender .title h1 {
+    padding-right: 24px;
+    width: fit-content;
+}
+
+.recommender .recommender-nothing {
+    font-size: 25px;
+    font-weight: 500;
+}
+

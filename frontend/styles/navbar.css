@@ -1,0 +1,86 @@
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    min-height: 60px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: linear-gradient(white, #f6f4f4);
+    font-family: 'nav-font', serif;
+    color: rgb(61, 61, 61);
+}
+
+.navbar .left,
+.navbar .right {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar .left img {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    height: 60px;
+    object-fit: contain;
+}
+
+.navbar ul {
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.navbar ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 40px;
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li:hover {
+    cursor: pointer;
+    background-color: #ffe084;
+    border-radius: 5px;
+}
+
+.navbar ul li i {
+    color: rgb(197, 100, 87);
+    font-size: 20px;
+    position: relative;
+    top: -20px;
+    right: 0px;
+}
+
+.navbar ul li input {
+    border: 1px solid #ccc;
+}
+
+.navbar ul li input:focus {
+    outline-width: 0px;
+}
+
+
+.navbar ul li .icon {
+    font-size: 40px;
+}
+
+
+

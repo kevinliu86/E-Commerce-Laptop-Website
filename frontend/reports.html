@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="description" content="login-page">
+        <meta name="author" content="Yanchao Liu">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" type="text/css" href="styles/base.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/reports.css" />
+
+        <link rel="stylesheet" type="text/css" href="styles/navbar.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/modal.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/font.css"/>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <title>Laptop Mall: Sale Reports Page</title>
+    </head>
+
+    <body>
+        <nav class="navbar"></nav>
+
+        <main>
+            <h1>Sales Report</h1>
+
+            <div class="fields">
+                <div class="row">
+                    <label>From</label>
+                    <input type="date" name="from" min="2021-01-01"/>
+                </div>
+                
+                <div class="row">
+                    <label>To</label>
+                    <input type="date" name="to" min="2021-01-01"/>
+                </div>
+
+                <div class="row">
+                    <input type="radio" name="type" value="day"/>
+                    <label>By day</label>
+                </div>
+
+                <div class="row">
+                    <input type="radio" name="type" value="week"/>
+                    <label>By week</label>
+                </div>
+
+                <div class="row">
+                    <input type="radio" name="type" value="month"/>
+                    <label>By month</label>
+                </div>
+
+                <button>View</button>
+            </div>
+
+            <div class="reports">
+                <div class="simple"></div>
+                <div class="graphs"></div>
+            </div>
+        </main>
+        
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <script type="module" src="src/reports.js"></script>
+
+    </body>
+</html>

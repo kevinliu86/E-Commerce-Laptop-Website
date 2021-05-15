@@ -1,0 +1,87 @@
+.fields {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.fields .row {
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 24px;
+}
+
+.fields .row label {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.fields .row input[type=radio]{
+    -ms-transform: scale(1.6); /* IE 9 */
+    -webkit-transform: scale(1.6); /* Chrome, Safari, Opera */
+    transform: scale(1.6);
+}
+
+.fields .row input[type=date] {
+    font-size: 20px;
+}
+
+.reports {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
+}
+
+.reports .simple {
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.reports .simple .card {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 26px;
+    background-color:#00FFFF;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border: 0.5px solid #ccc;
+}
+
+.reports .simple .card:hover {
+    background-color:rgba(250, 235, 215, 0.801);
+}
+
+
+.reports .simple .card .top {
+    padding-top: 6px;
+    padding-bottom: 12px;
+    font-weight: bold;
+}
+
+.reports .simple .card .bottom {
+    padding-top: 12px;
+    padding-bottom: 8px;
+    font-weight: bold;
+}
+
+.reports .graphs {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.reports svg {
+    margin-bottom: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="description" content="login-page">
+        <meta name="author" content="Yanchao Liu">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" type="text/css" href="styles/base.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/base2.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/base3.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/account.css" />
+
+        <link rel="stylesheet" type="text/css" href="styles/navbar.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/modal.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/font.css"/>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <title>Laptop Mall: Account Page</title>
+    </head>
+
+    <body>
+        <nav class="navbar"></nav>
+
+        <main>
+            <div class="profile"></div>
+
+            <div class="orders"></div>
+
+            <div class="rating"></div>
+            
+            <div class="recommender">
+                <!-- require token -->
+                <div class="viewhistory"></div>
+                <div class="byitem"></div>
+                <div class="byviewhistory"></div>    
+
+                <!-- these two does not require token -->
+                <div class="topselling"></div>
+                <div class="topview"></div>
+            </div>
+        </main>
+
+        <script type="module" src="src/account.js"></script>
+
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger
+            intent="WELCOME"
+            chat-title="WWCD5"
+            agent-id="ca8454fe-7ca8-4857-89f4-b8fc85263c5d"
+            language-code="en"
+        ></df-messenger>
+    </body>
+</html>

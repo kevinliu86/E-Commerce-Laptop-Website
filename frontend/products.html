@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="description" content="admin-page">
+        <meta name="author" content="Yanchao Liu">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="styles/base.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/base2.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/products.css" />
+
+        <link rel="stylesheet" type="text/css" href="styles/navbar.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/modal.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/font.css"/>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <title>Laptop Mall: Products List Page</title>
+    </head>
+
+    <body>
+        <nav class="navbar"></nav>
+
+        <main>
+            <div class="filters"></div>
+            <div class="shelf">
+                <div class="keyword"></div>
+                <div class="dropdowns"></div>
+                <div class="products"></div>
+                <div class="pages"></div>
+            </div>
+        </main>
+
+        <script type="module" src="src/products.js"></script>
+
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger
+            intent="WELCOME"
+            chat-title="WWCD5"
+            agent-id="ca8454fe-7ca8-4857-89f4-b8fc85263c5d"
+            language-code="en"
+        ></df-messenger>
+    </body>
+</html>
